@@ -14,7 +14,7 @@ public class MultiThreadClass {
 
     public static void calculate(int startIndex, int endIndex) {
         for (int i = startIndex; i < endIndex; i++) {
-            ARRAY[i] = (float) (ARRAY[i] * Math.sin(0.2f + (i + startIndex) / 5.0) * Math.cos(0.2f + (i + startIndex) / 5.0) * Math.cos(0.4f + (i + startIndex) / 2.0));
+            ARRAY[i] = (float) (ARRAY[i] * Math.sin(0.2f + i / 5.0 * Math.cos(0.2f + i / 5.0) * Math.cos(0.4f + i / 2.0)));
         }
     }
 
